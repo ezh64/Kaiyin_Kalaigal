@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -150,6 +151,19 @@
             document.querySelectorAll('main').forEach(main => main.classList.add('hidden'));
             document.getElementById(page).classList.remove('hidden');
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('login-btn').addEventListener('click', function() {
+                const password = document.getElementById('password').value;
+                const email = document.getElementById('email').value; // You can also check the email if needed
+
+                if (password === 'aakash23') {
+                    window.location.href = 'aakash.html'; // Redirect to aakash.html
+                } else {
+                    alert('Invalid password. Please try again.'); // Alert for invalid password
+                }
+            });
+        });
     </script>
 </head>
 <body class="home-container">
@@ -172,7 +186,7 @@
             <input type="email" id="email" placeholder="Enter your email"><br>
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password"><br>
-            <button class="login-btn" onclick="window.location.href='index.html'">Log in</button>
+            <button class="login-btn" id="login-btn">Log in</button>
             <p>Log in with <span class="icons">[G] [F] [GH]</span></p>
             <p>No account? <a href="#" onclick="navigateTo('signup-selection')">Sign up</a></p>
         </div>
@@ -211,7 +225,7 @@
             <input type="password" id="password" placeholder="Enter your password">
             <label for="repeat-password">Repeat Password</label>
             <input type="password" id="repeat-password" placeholder="Confirm your password">
-            <button class="signup-btn"> <a href="sellerhome.html">Sign Up</button>
+            <button class="signup-btn"><a href="sellerhome.html">Sign Up</a></button>
             <p>Have an account? <a href="#" onclick="navigateTo('login')">Login</a></p>
         </div>
     </main>
