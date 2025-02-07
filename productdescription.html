@@ -1,0 +1,370 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Product Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+  </style>
+  <script>
+   function showProductDetails(src, title, price, rating) {
+            document.getElementById('mainImage').src = src;
+            document.getElementById('productTitle').innerText = title;
+            document.getElementById('productPrice').innerText = price;
+            document.getElementById('productRating').innerHTML = rating;
+        }
+  </script>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-teal-700 text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center space-x-4">
+        <img src="assets/kklogo.png" alt="Kaiyin Kalaigal Logo" class="logo" width="100" height="100">
+     <h1 class="text-2xl font-bold">
+      KayinKalaigal
+     </h1>
+     <div class="relative">
+      <input class="px-4 py-2 rounded-md bg-white text-black" placeholder="Search" type="text"/>
+      <button class="absolute right-0 top-0 mt-2 mr-2">
+       <i class="fas fa-search text-gray-500">
+       </i>
+      </button>
+     </div>
+    </div>
+    <nav class="flex space-x-6">
+     <a class="hover:text-gray-300" href="index.html">
+      HOME
+     </a>
+     <a class="hover:text-gray-300" href="products.html">
+      PRODUCTS
+     </a>
+     <a class="hover:text-gray-300" href="artist.html">
+      ARTISTS
+     </a>
+     <a class="hover:text-gray-300" href="sell1.html">
+      SELL
+     </a>
+    </nav>
+    <div class="flex items-center space-x-4">
+     <button class="bg-white text-green-900 px-4 py-2 rounded-md">
+      Login
+     </button>
+    </div>
+   </div>
+  </header>
+  <!-- Banner -->
+  <section class="bg-cover bg-center" style="background-image: url('https://sklep.rybaolpiny.com.pl/data/include/img/links/1709650639_rwd_mobile.jpg?t=1724358527');">
+    <div class="container mx-auto text-center py-16">
+        <h2 class="text-4xl font-bold text-white">OUR PRODUCT</h2>
+    </div>
+</section>
+  <!-- Navigation -->
+  <nav class="bg-yellow-600 text-white py-3">
+   <div class="container mx-auto flex justify-between items-center px-6">
+    <div class="flex space-x-6">
+     <a class="hover:text-gray-300" href="#">
+      CATEGORIES
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      BEST SELLERS
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      NEW ARRIVALS
+     </a>
+     <a class="hover:text-gray-300" href="#">
+      SELL IN KAIYIN KALAIGAL
+     </a>
+    </div>
+    <div class="flex space-x-4">
+     <i class="fas fa-heart">
+     </i>
+     <i class="fas fa-shopping-cart">
+     </i>
+    </div>
+   </div>
+  </nav>
+  <!-- Product Details -->
+  <section class="container mx-auto py-10 px-6">
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div>
+     <img alt="Black and Brown teardrop Earrings" class="w-full h-full object-cover" height="400" id="mainImage" src="https://storage.googleapis.com/a1aa/image/8KJQn-Vyu4itPsGK3Wncar4alQoc_TKuoF51Vi1m1WM.jpg" width="400"/>
+     <div class="flex space-x-4 mt-4">
+      <img alt="Thumbnail 1" class="w-20 h-20 object-cover cursor-pointer" height="100" onclick="showPreview('https://storage.googleapis.com/a1aa/image/k1tC4scwJYLRnp_57hAndpZ8SHZ94kESnFBHUOs-hnk.jpg')" src="https://storage.googleapis.com/a1aa/image/k1tC4scwJYLRnp_57hAndpZ8SHZ94kESnFBHUOs-hnk.jpg" width="100"/>
+      <img alt="Thumbnail 2" class="w-20 h-20 object-cover cursor-pointer" height="100" onclick="showPreview('https://storage.googleapis.com/a1aa/image/-CkJqPIjpv_UuUGDliZh0IaWBhjH3OMKysou3zCK0l4.jpg')" src="https://storage.googleapis.com/a1aa/image/-CkJqPIjpv_UuUGDliZh0IaWBhjH3OMKysou3zCK0l4.jpg" width="100"/>
+      <img alt="Thumbnail 3" class="w-20 h-20 object-cover cursor-pointer" height="100" onclick="showPreview('https://storage.googleapis.com/a1aa/image/fPxiaVc0u4K5mU83SyTZ-905t3UIKE-QTiuwwnClDw8.jpg')" src="https://storage.googleapis.com/a1aa/image/fPxiaVc0u4K5mU83SyTZ-905t3UIKE-QTiuwwnClDw8.jpg" width="100"/>
+      <img alt="Thumbnail 4" class="w-20 h-20 object-cover cursor-pointer" height="100" onclick="showPreview('https://storage.googleapis.com/a1aa/image/clh7slW0D7YnKtLVJRjeopZ40n2K1Jy2oyRaxOrEePk.jpg')" src="https://storage.googleapis.com/a1aa/image/clh7slW0D7YnKtLVJRjeopZ40n2K1Jy2oyRaxOrEePk.jpg" width="100"/>
+     </div>
+    </div>
+    <div>
+     <h2 class="text-3xl font-bold" id="productTitle">
+      Black and Brown teardrop Earrings
+     </h2>
+     <div class="flex items-center mt-2" id="productRating">
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-gray-300">
+       <i class="fas fa-star">
+       </i>
+      </span>
+     </div>
+     <p class="text-xl font-semibold mt-2" id="productPrice">
+      Rs.200 incl. GST
+     </p>
+     <div class="flex items-center mt-4">
+      <label class="mr-2" for="quantity">
+       Quantity:
+      </label>
+      <select class="border border-gray-300 rounded-md px-2 py-1" id="quantity">
+       <option value="1">
+        1
+       </option>
+       <option value="2">
+        2
+       </option>
+       <option value="3">
+        3
+       </option>
+       <option value="4">
+        4
+       </option>
+      </select>
+     </div>
+     <div class="flex space-x-4 mt-4">
+      <button class="bg-teal-700 text-white px-6 py-2 rounded-md">
+        <a href="order.html">
+       BUY NOW</a>
+      </button>
+      <button class="bg-gray-200 text-green-900 px-6 py-2 rounded-md">
+       <i class="fas fa-shopping-cart">
+       </i>
+       ADD TO CART
+      </button>
+     </div>
+     <div class="mt-4">
+      <button class="text-teal-700">
+       <i class="fas fa-heart">
+       </i>
+       ADD TO WISHLIST
+      </button>
+     </div>
+     <p class="text-red-500 mt-2">
+      LESS THAN 41 ITEMS LEFT
+     </p>
+     <div class="mt-4">
+      <p>
+       <i class="fas fa-truck">
+       </i>
+       DISPATCHED WITHIN 1 - 2 WORKING DAYS
+      </p>
+      <p>
+       <i class="fas fa-search">
+       </i>
+       DETAILED PRESHIPMENT INSPECTION
+      </p>
+     </div>
+     <div class="mt-4">
+      <h3 class="text-xl font-bold">
+       PRODUCT DETAILS
+      </h3>
+      <ul class="list-disc list-inside mt-2">
+       <li>
+        USABILITY: JEWELLERY
+       </li>
+       <li>
+        MATERIAL: WOOD
+       </li>
+       <li>
+        LENGTH: 2 cm
+       </li>
+       <li>
+        WEIGHT: 3 mg
+       </li>
+       <li>
+        COLOR: BROWN AND BLACK
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Ratings -->
+  <section class="container mx-auto py-10 px-6">
+   <h3 class="text-2xl font-bold mt-10">
+    RATINGS
+   </h3>
+   <div class="flex items-center mt-2">
+    <span class="text-2xl font-bold">
+     4.4
+    </span>
+    <span class="text-yellow-500 ml-2">
+     <i class="fas fa-star">
+     </i>
+    </span>
+   </div>
+   <p class="mt-2">
+    10 VERIFIED BUYERS
+   </p>
+   <div class="mt-4">
+    <div class="flex items-center">
+     <span class="w-10">
+      5
+     </span>
+     <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 80%">
+      </div>
+     </div>
+    </div>
+    <div class="flex items-center mt-2">
+     <span class="w-10">
+      4
+     </span>
+     <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 60%">
+      </div>
+     </div>
+    </div>
+    <div class="flex items-center mt-2">
+     <span class="w-10">
+      3
+     </span>
+     <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 40%">
+      </div>
+     </div>
+    </div>
+    <div class="flex items-center mt-2">
+     <span class="w-10">
+      2
+     </span>
+     <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 20%">
+      </div>
+     </div>
+    </div>
+    <div class="flex items-center mt-2">
+     <span class="w-10">
+      1
+     </span>
+     <div class="w-full bg-gray-200 rounded-full h-2.5">
+      <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 10%">
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Similar Products -->
+  <section class="container mx-auto py-10 px-6">
+   <h3 class="text-2xl font-bold">
+    SIMILAR PRODUCTS
+   </h3>
+   <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+    <div class="bg-white p-4 rounded-md shadow-md">
+     <img alt="Teardrop earrings" class="w-full h-40 object-cover cursor-pointer" height="200" onclick="showProductDetails('https://storage.googleapis.com/a1aa/image/NQgCrW-A-iX6YgX3XCu8HxFkPNXdteUvTa5vDxo-WYU.jpg', 'Teardrop earrings', 'Rs.300', '<span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-gray-300\'><i class=\'fas fa-star\'></i></span>')" src="https://storage.googleapis.com/a1aa/image/NQgCrW-A-iX6YgX3XCu8HxFkPNXdteUvTa5vDxo-WYU.jpg" width="200"/>
+     <h4 class="text-lg font-bold mt-4">
+      Teardrop earrings
+     </h4>
+     <div class="flex items-center mt-2">
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-yellow-500">
+       <i class="fas fa-star">
+       </i>
+      </span>
+      <span class="text-gray-300">
+       <i class="fas fa-star">
+       </i>
+      </span>
+     </div>
+     <p class="text-xl font-semibold mt-2">
+      Rs.300
+     </p>
+     <div class="flex space-x-4 mt-4">
+      <button class="text-green-900">
+       <i class="fas fa-heart">
+       </i>
+      </button>
+      <button class="text-green-900">
+       <i class="fas fa-shopping-cart">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="bg-white p-4 rounded-md shadow-md">
+     <img alt="Sandal with brown round earrings" class="w-full h-40 object-cover cursor-pointer" height="200" onclick="showProductDetails('https://storage.googleapis.com/a1aa/image/Q_LGYyhj3hqPYf0J15Imbf_iebQm2Msy7vqeE_w78mY.jpg', 'Sandal with brown round earrings', 'Rs.200', '<span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-yellow-500\'><i class=\'fas fa-star\'></i></span><span class=\'text-gray-300\'><i class=\'fas fa-star\'></i></span>')" src="https://storage.googleapis.com/a1aa/image/Q_LGYyhj3hqPYf0J15Imbf_iebQm2Msy7vqeE_w78mY.jpg" width="200"/>
+     <h4 class="text-lg font-bold mt-4">
+      Sandal with brown round earrings
+     </h4>
+     <div class="flex items-center mt-2">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+       </div>
+       <p class="text-xl font-semibold mt-2">
+        Rs.300
+       </p>
+       <div class="flex space-x-4 mt-4">
+        <button class="text-green-900">
+         <i class="fas fa-heart">
+         </i>
+        </button>
+        <button class="text-green-900">
+         <i class="fas fa-shopping-cart">
+         </i>
+        </button>
+       </div>
+      </div>

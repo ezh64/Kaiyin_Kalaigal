@@ -1,0 +1,269 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Kaiyin Kalaigal
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .carousel-item {
+    display: none;
+   }
+   .carousel-item.active {
+    display: block;
+   }
+  </style>
+ </head>
+ <body class="font-roboto">
+  <header class="bg-teal-700 text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center">
+     <img alt="Logo" class="h-20 w-20" height="100" src="assets/kklogo.png" width="100"/>
+     <span class="ml-3 text-xl font-bold">
+      Kaiyin Kalaigal
+     </span>
+    </div>
+    <div class="flex items-center space-x-6">
+     <nav class="flex space-x-6">
+      <a class="hover:text-gray-300" href="index.html">
+       Home
+      </a>
+      <a class="hover:text-gray-300" href="products.html">
+       Products
+      </a>
+      <a class="hover:text-gray-300" href="artist.html">
+       Artists
+      </a>
+      <a class="hover:text-gray-300" href="sell1.html">
+       Sell
+      </a>
+      <a class="hover:text-gray-300" href="#">
+       Lan
+      </a>
+      <a class="hover:text-gray-300" href="login.html">
+       Login
+      </a>
+     </nav>
+     <div class="relative">
+      <input class="bg-white text-black rounded-full py-2 px-4 pl-10 focus:outline-none" placeholder="Search products..." type="text"/>
+      <i class="fas fa-search absolute left-3 top-2.5 text-gray-500">
+      </i>
+     </div>
+    </div>
+   </div>
+  </header>
+  <section class="relative">
+   <img alt="Artisan at work" class="w-full h-96 object-cover" height="500" src="assets/homepage/pottery thatha.jpg" width="1200"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-end text-white pr-20">
+    <h1 class="text-4xl font-bold">
+     VANAKKAM
+    </h1>
+    <p class="mt-2 text-lg">
+     <!--"உங்கள் கைவினை எங்கள் பெருமை"-->
+     "உங்கள் கைகளின் வசனங்கள் 
+     <br>
+     உலகை அழகாக்குங்கள்"
+     <br/><br>
+     "The Words of your Hands 
+     <br> Beautify the World"
+    </p>
+   </div>
+  </section>
+  <section class="bg-white py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">
+     ABOUT US
+    </h2>
+    <p class="max-w-2xl mx-auto mb-6">
+     A vibrant digital platform connecting local artisans to customers. Explore handmade pottery, jewelry, and more. Experience craftsmanship and community in every purchase.
+    </p>
+    <img alt="Artisan product" class="mx-auto mb-4" height="300" src="assets/homepage/aboutimg.jpg" width="200"/>
+    <button class="bg-teal-700 text-white py-2 px-4 rounded"><a href="gallery.html">
+     View Gallery</a>
+    </button>
+   </div>
+  </section>
+  <section class="bg-gray-100 py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">
+     OUR PRODUCTS
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Pottery" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/potterycategory.webp" width="300"/>
+      <h3 class="text-lg font-semibold">
+       POTTERY
+      </h3>
+     </div>
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Silk Apparel" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/silkcategory.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       SILK APPAREL
+      </h3>
+     </div>
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Painting" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/paintingcategory.jpg" width="300"/>
+      <h3 class="text-lg font-semibold"><a href="products.html">
+       PAINTING</a>
+      </h3>
+     </div>
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Stone Carvings" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/stonecategory.jpeg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       STONE CARVINGS
+      </h3>
+     </div>
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Wooden Carvings" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/woodcategory.jpg" width="300"/>
+      <h3 class="text-lg font-semibold">
+       WOODEN CARVINGS
+      </h3>
+     </div>
+     <div class="cursor-pointer" onclick="navigateToProductsPage()">
+      <img alt="Jewellery" class="w-full h-48 object-cover mb-2" height="300" src="assets/homepage/jewellerycategory.jpg" width="300"/>
+      <h3 class="text-lg font-semibold"><a href="products.html">
+       JEWELLERY</a>
+      </h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="bg-teal-700 text-white py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">
+     OUR CULTURE OUR HERITAGE
+    </h2>
+    <div class="relative">
+     <div class="carousel-item active">
+      <p class="max-w-2xl mx-auto mb-6">
+       யாமறிந்த மொழிகளிலே தமிழ் மொழி போல் இனிதாவது எங்கும் காணோம்
+      </p>
+      <p class="max-w-2xl mx-auto mb-6">
+       எல் தோன்றும் மண் தோன்றும் காயாக் கற்பினும் பல் தோன்றும் மெய் தோன்றும் முத்தமிழ் நல் தோன்றும்
+      </p>
+      <img alt="Cultural Heritage 1" class="mx-auto mb-4" height="300" src="assets/homepage/bharathiyar.jpeg" width="200"/>
+     </div>
+     <div class="carousel-item">
+      <p class="max-w-2xl mx-auto mb-6">
+       தமிழ் மொழி எங்கள் பெருமை, எங்கள் அடையாளம்
+      </p>
+      <p class="max-w-2xl mx-auto mb-6">
+       எங்கள் கலாச்சாரம் எங்கள் அடையாளம், எங்கள் பெருமை
+      </p>
+      <img alt="Cultural Heritage 2" class="mx-auto mb-4" height="300" src="assets/homepage/aboutimg.jpg" width="200"/>
+     </div>
+     <div class="carousel-item">
+      <p class="max-w-2xl mx-auto mb-6">
+       எங்கள் பாரம்பரியம் எங்கள் அடையாளம்
+      </p>
+      <p class="max-w-2xl mx-auto mb-6">
+       எங்கள் கலைகள் எங்கள் பெருமை
+      </p>
+      <img alt="Cultural Heritage 3" class="mx-auto mb-4" height="300" src="assets/homepage/bharathiyar.jpeg" width="200"/>
+     </div>
+     <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-800 text-white px-4 py-2" onclick="prevSlide()">
+      &#10094;
+     </button>
+     <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-800 text-white px-4 py-2" onclick="nextSlide()">
+      &#10095;
+     </button>
+    </div>
+   </div>
+  </section>
+  <section class="bg-white py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">
+     படிக்கலாம் வாங்க
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+     <div class="bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <a href="https://youtu.be/XXqSaC9-Y2Y?si=F6qB8qeH86HhiIJA">
+      <img alt="Book 1" class="mx-auto mb-4" height="100" src="assets/homepage/buysell.png" width="100"/>
+      <h3 class="text-lg font-semibold">
+       பொருள் வாங்க விதி
+      </h3>
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <a href="https://youtu.be/XXqSaC9-Y2Y?si=F6qB8qeH86HhiIJA">
+      <img alt="Book 2" class="mx-auto mb-4" height="100" src="assets/homepage/vanigam.PNG" width="100"/>
+      <h3 class="text-lg font-semibold">
+       வணிகம்
+      </h3>
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg cursor-pointer">
+        <a href="https://youtu.be/XXqSaC9-Y2Y?si=F6qB8qeH86HhiIJA">
+                  <img alt="Book 3" class="mx-auto mb-4" height="100" src="assets/homepage/bank.PNG" width="100"/>
+      <h3 class="text-lg font-semibold">
+       வங்கி பரிமாற்றம்
+      </h3>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-teal-700 text-white py-4">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2025 Kaiyin Kalaigal Platform. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <div class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden" id="videoModal">
+   <div class="bg-white rounded-lg overflow-hidden">
+    <div class="relative pb-9/16">
+     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" frameborder="0" id="videoFrame" src="">
+     </iframe>
+    </div>
+    <button class="absolute top-0 right-0 m-4 text-white bg-red-600 rounded-full p-2" onclick="closeVideo()">
+     &times;
+    </button>
+   </div>
+  </div>
+  <script>
+   let currentSlide = 0;
+   const slides = document.querySelectorAll('.carousel-item');
+
+   function showSlide(index) {
+    slides.forEach((slide, i) => {
+     slide.classList.toggle('active', i === index);
+    });
+   }
+
+   function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+   }
+
+   function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+   }
+
+   showSlide(currentSlide);
+
+   function playVideo(url) {
+    const videoModal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = 'https://youtu.be/XXqSaC9-Y2Y?si=F6qB8qeH86HhiIJA';
+    videoModal.classList.remove('hidden');
+   }
+
+   function closeVideo() {
+    const videoModal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = 'https://youtu.be/XXqSaC9-Y2Y?si=F6qB8qeH86HhiIJA';
+    videoModal.classList.add('hidden');
+   }
+
+   function navigateToProductsPage() {
+    window.location.href = 'products.html';
+   }
+  </script>
+ </body>
+</html>

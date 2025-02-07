@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiyin Kalaigal</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #517470;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Home Page Styling */
+        .home-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Center Logo for Home Page */
+        .home-container .logo {
+            max-width: 200px; /* Adjust size */
+            margin-bottom: 20px; /* Space between logo and text */
+            position: static; /* Remove absolute positioning */
+        }
+
+        /* Move Content Below the Logo */
+        .home-container .content {
+            margin-top: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        /* Default Logo Position (For Other Pages) */
+        .logo {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+
+        /* Centered Form Box with Popup Style */
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            position: relative;
+            animation: popup 0.3s ease-in-out;
+        }
+
+        /* Input Fields Spacing */
+        .form-box label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button Styling */
+        button {
+            background: linear-gradient(to right, #FF5722, #FF9800);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4);
+        }
+
+        /* Signup Role Selection */
+        .signup-selection {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .signup-selection button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(to right, #ff5722, #ff9800);
+            transition: transform 0.2s ease-in-out;
+            margin: 10px;
+        }
+
+        .signup-selection button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Logo Centering */
+        header {
+            display: flex;
+            justify-content: center;
+            background: #517470;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        /* Popup Animation */
+        @keyframes popup {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            document.querySelectorAll('main').forEach(main => main.classList.add('hidden'));
+            document.getElementById(page).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body class="home-container">
+    <header>
+        <img src="assets/kklogo.png" alt="Kaiyin Kalaigal Logo" class="logo">
+    </header>
+
+    <!-- Home Page -->
+    <main class="loading-page" id="home">
+        <h1>Welcome to Kaiyin Kalaigal</h1>
+        <p class="tagline">பாரம்பரியம் புதுமை பெறும் இடம்.<br>கைகளைக் கோர்த்து கையின் கலைகள் பொற்றுவோம்.</p>
+        <button onclick="navigateTo('login')">GET STARTED</button>
+    </main>
+
+    <!-- Login Page -->
+    <main class="login-page hidden" id="login">
+        <div class="form-box">
+            <h2>Log in</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <button class="login-btn" onclick="window.location.href='index.html'">Log in</button>
+            <p>Log in with <span class="icons">[G] [F] [GH]</span></p>
+            <p>No account? <a href="#" onclick="navigateTo('signup-selection')">Sign up</a></p>
+        </div>
+    </main>
+
+    <!-- Signup Selection Page -->
+    <main class="signup-selection hidden" id="signup-selection">
+        <h2>Select Your Role</h2>
+        <button onclick="navigateTo('signup-admin')">Admin</button>
+        <button onclick="navigateTo('signup-seller')">Seller</button>
+        <button onclick="navigateTo('signup-buyer')">Buyer</button>
+    </main>
+
+    <!-- Admin Signup Page -->
+    <main class="signup-page hidden" id="signup-admin">
+        <div class="form-box">
+            <h2>Admin Signup</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" id="repeat-password" placeholder="Confirm your password">
+            <button class="signup-btn" onclick="navigateTo('login')">Sign Up</button>
+            <p>Have an account? <a href="#" onclick="navigateTo('login')">Login</a></p>
+        </div>
+    </main>
+
+    <!-- Seller Signup Page -->
+    <main class="signup-page hidden" id="signup-seller">
+        <div class="form-box">
+            <h2>Seller Signup</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" id="repeat-password" placeholder="Confirm your password">
+            <button class="signup-btn"> <a href="sellerhome.html">Sign Up</button>
+            <p>Have an account? <a href="#" onclick="navigateTo('login')">Login</a></p>
+        </div>
+    </main>
+
+    <!-- Buyer Signup Page -->
+    <main class="signup-page hidden" id="signup-buyer">
+        <div class="form-box">
+            <h2>Buyer Signup</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" id="repeat-password" placeholder="Confirm your password">
+            <button class="login-btn" onclick="window.location.href='index.html'">Log in</button>
+            <p>Have an account? <a href="#" onclick="navigateTo('login')">Login</a></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-teal-700 text-white p-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="assets/kklogo.png" alt="Kaiyin Kalaigal Logo" class="logo" width="100" height="100">
+            <div class="ml-4">
+                <input type="text" placeholder="Search" class="p-2 rounded-md">
+                <button class="ml-2 p-2 bg-white text-green-900 rounded-md">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="flex space-x-4">
+            <a href="index.html" class="hover:underline">HOME</a>
+            <a href="products.html" class="hover:underline">PRODUCTS</a>
+            <a href="artist.html" class="hover:underline">ARTISTS</a>
+            <a href="sell2.html" class="hover:underline">SELL</a>
+            <a href="#" class="hover:underline">LAN</a>
+            <button class="border border-white px-4 py-2 rounded">
+                LOGIN
+               </button>
+        </nav>
+    </header>
+    <main class="p-8">
+        <div class="flex justify-center mb-8">
+            <div class="w-3/4 flex justify-between">
+                <div class="text-center">
+                    <div class="w-8 h-8 bg-teal-700 rounded-full mx-auto"></div>
+                    <p>BASIC DETAILS</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-8 h-8 bg-teal-700 rounded-full mx-auto"></div>
+                    <p>PRICE DETAILS</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-8 h-8 bg-teal-700 rounded-full mx-auto"></div>
+                    <p>PRODUCT GROUP</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-8 h-8 bg-gray-300 rounded-full mx-auto"></div>
+                    <p>COMPLETION</p>
+                </div>
+            </div>
+        </div>
+        <form class="space-y-8">
+            <div>
+                <label class="block text-lg font-semibold mb-2">PRODUCT CATEGORY <i class="fas fa-volume-up"></i></label>
+                <select class="w-full p-2 border rounded-md">
+                    <option>Pick an option</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-lg font-semibold mb-2">PRODUCT NAME <i class="fas fa-volume-up"></i></label>
+                <div class="flex items-center">
+                    <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+                    <button class="ml-2 p-2 bg-white border rounded-md">
+                        <i class="fas fa-play"></i> 0:09
+                    </button>
+                </div>
+            </div>
+            <div>
+                <label class="block text-lg font-semibold mb-2">PRODUCT DESCRIPTION <i class="fas fa-volume-up"></i></label>
+                <textarea class="w-full p-2 border rounded-md bg-gray-200 h-32"></textarea>
+            </div>
+            <div class="flex space-x-8">
+                <div class="w-1/2">
+                    <label class="block text-lg font-semibold mb-2">PHOTOS <i class="fas fa-volume-up"></i></label>
+                    <div class="w-full h-48 border rounded-md flex items-center justify-center bg-gray-200">
+                        <i class="fas fa-upload text-4xl"></i>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <label class="block text-lg font-semibold mb-2">PRODUCT DIMENSIONS <i class="fas fa-volume-up"></i></label>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block">LENGTH</label>
+                            <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+                        </div>
+                        <div>
+                            <label class="block">BREADTH</label>
+                            <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+                        </div>
+                        <div>
+                            <label class="block">WIDTH</label>
+                            <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="block text-lg font-semibold mb-2">STOCK QUANTITY <i class="fas fa-volume-up"></i></label>
+                <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+            </div>
+            <div class="flex space-x-8">
+                <div class="w-1/2">
+                    <label class="block text-lg font-semibold mb-2">PRODUCT VIDEO (optional) <i class="fas fa-volume-up"></i></label>
+                    <div class="w-full h-48 border rounded-md flex items-center justify-center bg-gray-200">
+                        <i class="fas fa-upload text-4xl"></i>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <label class="block text-lg font-semibold mb-2">PRODUCT COST <i class="fas fa-volume-up"></i></label>
+                    <input type="text" class="w-full p-2 border rounded-md bg-gray-200">
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-teal-700 text-white px-8 py-2 rounded-md" ><a href="sell4.html"> NEXT</a></button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

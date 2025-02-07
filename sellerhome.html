@@ -1,0 +1,252 @@
+<html>
+<head>
+    <title>Kaiyin Kalaigal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-roboto">
+    <header class="bg-[#517470] p-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <i class="fas fa-bars text-xl text-white"></i>
+            <h1 class="ml-4 text-2xl font-bold text-white">Kaiyin Kalaigal</h1>
+        </div>
+        <div class="flex space-x-4">
+            <a href="javascript:void(0)" onclick="showSection('home')" class="text-white flex items-center space-x-2">
+                <i class="fas fa-home text-xl"></i>
+                <span>Home</span>
+            </a>
+            <a href="javascript:void(0)" onclick="showSection('my-products')" class="text-white flex items-center space-x-2">
+                <i class="fas fa-box text-xl"></i>
+                <span>My Products</span>
+            </a>
+            <a href="javascript:void(0)" onclick="showSection('add-category')" class="text-white flex items-center space-x-2">
+                <i class="fas fa-plus text-xl"></i>
+                <span>Add Category</span>
+            </a>
+            <a href="javascript:void(0)" onclick="showSection('my-sales')" class="text-white flex items-center space-x-2">
+                <i class="fas fa-chart-line text-xl"></i>
+                <span>My Sales</span>
+            </a>
+            <a href="javascript:void(0)"  class="text-white flex items-center space-x-2">
+                <i class="fas fa-plus text-xl"></i>
+                <a href="login.html">
+                <span>Login</span></a>
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="p-4">
+        <div class="p-4">
+            <input type="text" placeholder="Search" class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div class="bg-[#517470] p-4">
+            <h2 class="text-2xl font-bold text-center text-white">All Products</h2>
+        </div>
+        <div class="p-4">
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Jewellery</h3>
+                <p>Rs 350</p>
+            </div>
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Wooden</h3>
+                <p>Rs 2500</p>
+            </div>
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Stone</h3>
+                <p>Rs 50</p>
+            </div>
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Painting</h3>
+                <p>Rs 4500</p>
+            </div>
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Silk</h3>
+                <p>Rs 500</p>
+            </div>
+            <div class="bg-white p-4 mb-4 border border-gray-300 rounded">
+                <h3 class="text-xl font-bold">Pottery</h3>
+                <p>Rs 50</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-products" class="p-4 hidden">
+        <h2 class="text-3xl font-bold text-center mb-4"><a href="sell1.html" >Add Products</a></h2>
+        <div class="text-center mb-4">
+            <button class="py-2 px-4 rounded-full text-lg font-bold" style="background-color: #517470; color: white;">Add New Products</button>
+        </div>
+        <div class="mb-4">
+            <input class="w-full p-2 border border-gray-300 rounded" placeholder="Search" type="text"/>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md" style="color: #517470;">
+                <div class="flex flex-col">
+                    <div class="w-full">
+                        <img alt="A collection of pottery items including vases and cups" class="my-4 w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/0LPA-PYUpIDrxA-YY37JoU-bsB14eokdEFowH8Fvr7E.jpg" width="600"/>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-lg"><span class="font-semibold">Product Id:</span> 9</p>
+                        <p class="text-lg"><span class="font-semibold">Name:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Description:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Price:</span> <span class="font-bold text-green-600">Rs 50</span></p>
+                        <p class="text-lg"><span class="font-semibold">Size:</span> <span class="font-bold">30 cm</span></p>
+                        <p class="text-lg"><span class="font-semibold">Qty:</span> 1</p>
+                        <p class="text-lg"><span class="font-semibold">Specification:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Shipping Charges:</span> 50</p>
+                        <p class="text-lg"><span class="font-semibold">Category:</span> Pottery</p>
+                        <p class="text-lg"><span class="font-semibold">Locality:</span> Chennai</p>
+                        <p class="text-lg"><span class="font-semibold">Mobile:</span> 1234567890</p>
+                        <div class="flex space-x-2 mt-4">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded">Image Upload</button>
+                            <button class="bg-yellow-500 text-white px-4 py-2 rounded">Update</button>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md" style="color: #517470;">
+                <div class="flex flex-col">
+                    <div class="w-full">
+                        <img alt="A collection of pottery items including vases and cups" class="my-4 w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/0LPA-PYUpIDrxA-YY37JoU-bsB14eokdEFowH8Fvr7E.jpg" width="600"/>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-lg"><span class="font-semibold">Product Id:</span> 10</p>
+                        <p class="text-lg"><span class="font-semibold">Name:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Description:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Price:</span> <span class="font-bold text-green-600">Rs 60</span></p>
+                        <p class="text-lg"><span class="font-semibold">Size:</span> <span class="font-bold">35 cm</span></p>
+                        <p class="text-lg"><span class="font-semibold">Qty:</span> 2</p>
+                        <p class="text-lg"><span class="font-semibold">Specification:</span> <span class="font-bold">Pottery</span></p>
+                        <p class="text-lg"><span class="font-semibold">Shipping Charges:</span> 60</p>
+                        <p class="text-lg"><span class="font-semibold">Category:</span> Pottery</p>
+                        <p class="text-lg"><span class="font-semibold">Locality:</span> Chennai</p>
+                        <p class="text-lg"><span class="font-semibold">Mobile:</span> 1234567891</p>
+                        <div class="flex space-x-2 mt-4">
+                            <button class="bg-red-500 text-white px-4 py-2 rounded">Image Upload</button>
+                            <button class="bg-yellow-500 text-white px-4 py-2 rounded">Update</button>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="add-category" class="p-4 hidden">
+        <h2 class="text-3xl font-bold text-center mb-4">Category Details</h2>
+        <div class="text-center mb-4">
+            <button class="bg-[#517470] text-white py-2 px-4 rounded">Add New Category</button>
+        </div>
+        <div class="mb-4">
+            <input class="w-full p-2 border border-gray-300 rounded" placeholder="Search" type="text"/>
+        </div>
+        <div class="border-t border-gray-300 pt-4">
+            <div class="mb-8">
+                <p class="text-lg"><span class="font-bold">Id:</span> 1</p>
+                <p class="text-lg"><span class="font-bold">Name:</span> <span class="font-bold">Pottery</span></p>
+                <img alt="A collection of pottery items including vases, cups, and plates" class="w-full h-auto my-4" height="100" src="https://storage.googleapis.com/a1aa/image/7kkYLeKq45yRyyi1XSv1lLZ0gf18ARJ7yvHw_oNiE2E.jpg" width="150"/>
+                <div class="flex space-x-2">
+                    <button class="bg-yellow-500 text-black py-2 px-4 rounded">Update</button>
+                    <button class="bg-yellow-500 text-black py-2 px-4 rounded">Delete</button>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-4">
+                <p class="text-lg"><span class="font-bold">Id:</span> 2</p>
+                <p class="text-lg"><span class="font-bold">Name:</span> <span class="font-bold">Painting</span></p>
+                <img alt="A collection of paintings displayed in an art gallery" class="w-full h-auto my-4" height="100" src="https://storage.googleapis.com/a1aa/image/JY5Q6s-qYZMiB-pmaB9NqVEmOvPIUjnCZ1WoM0Pq01s.jpg" width="150"/>
+                <div class="flex space-x-2">
+                    <button class="bg-yellow-500 text-black py-2 px-4 rounded">Update</button>
+                    <button class="bg-yellow-500 text-black py-2 px-4 rounded">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-sales" class="p-4 hidden">
+        <h2 class="text-4xl font-semibold text-center mb-4">My Sales</h2>
+        <div class="mb-4">
+            <input class="w-full p-2 border border-gray-300 rounded" placeholder="Search" type="text"/>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr class="w-full bg-[#517470] text-left text-white">
+                        <th class="py-2 px-4">Date</th>
+                        <th class="py-2 px-4">Customer ID</th>
+                        <th class="py-2 px-4">Product</th>
+                        <th class="py-2 px-4">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-25</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Pottery</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of pottery products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ws66yL2eaNaY9Y4Thg774qP35vImW--FuSa3uJ-2j4Q.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-25</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Pottery</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of pottery products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ws66yL2eaNaY9Y4Thg774qP35vImW--FuSa3uJ-2j4Q.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-24</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Pottery</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of pottery products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ws66yL2eaNaY9Y4Thg774qP35vImW--FuSa3uJ-2j4Q.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-24</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Pottery</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of pottery products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ws66yL2eaNaY9Y4Thg774qP35vImW--FuSa3uJ-2j4Q.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-24</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Silk</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of silk products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/63B0OHjiy0eb6Qwm0NfpFPP63rLECdF2gqEjW31019w.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-23</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Silk</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of silk products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/63B0OHjiy0eb6Qwm0NfpFPP63rLECdF2gqEjW31019w.jpg" width="50"/>
+                        </td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2 px-4">2024-06-14</td>
+                        <td class="py-2 px-4">4</td>
+                        <td class="py-2 px-4">Pottery</td>
+                        <td class="py-2 px-4">
+                            <img alt="Image of pottery products" class="w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/ws66yL2eaNaY9Y4Thg774qP35vImW--FuSa3uJ-2j4Q.jpg" width="50"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
